@@ -12,7 +12,7 @@ void displaymenu(){
 
 }
 
-void khai_bao(int arr[100],int *n ){
+void khaibao(int arr[100],int *n ){
 	printf("Nhap so luong phan tu:");
 	scanf("%d",n);
 	for(int i=0;i<*n;i++){
@@ -120,10 +120,10 @@ int main(){
 		scanf("%d",&choice);
 		switch(choice){
 			case 1:
-				khai_bao(arr,&n);
+				khaibao(arr,&n);
 				break;
 			case 2:
-				khai_bao(arr,&n);
+				khaibao(arr,&n);
 				printf("Mang da nhap la: ");
 				for(int i=0; i<n; i++){
 					printf("%d\t",arr[i]);
@@ -131,24 +131,24 @@ int main(){
 				printf("\n");
 				break;
 			case 3://them 
-				khai_bao(arr,&n);
+				khaibao(arr,&n);
 				them(arr,n);
 				break;
 			case 4://sua
-				khai_bao(arr,&n);
+				khaibao(arr,&n);
 				sua(arr,n);
 				break;
 			case 5://xoa
-				khai_bao(arr,&n);
+				khaibao(arr,&n);
 				xoa(arr,n);
 				break;
 			case 6:// tang dan
-				khai_bao(arr,&n);
+				khaibao(arr,&n);
 				tang(arr,n);
 				break;
 			case 7:
 				// giam dan
-				khai_bao(arr,&n);
+				khaibao(arr,&n);
 				giam(arr,n);
 				break;
 			case 8://thoat
