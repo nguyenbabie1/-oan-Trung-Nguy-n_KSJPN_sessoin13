@@ -12,7 +12,7 @@ void displaymenu(){
 	printf("7.Thoat \n");
 }
 //khai bao 
-void khai_bao(int arr[100][100] , int *n,int *m){
+void khaibao(int arr[100][100] , int *n,int *m){
 	printf("Nhap so hang :");
 	scanf("%d", n);
 	printf("Nhap so cot:");
@@ -67,7 +67,7 @@ void phu(int arr[100][100], int n, int m){
 	}
 }
 //kiem tra so nguyen to
-int is_prime(int n) {
+int isprime(int n) {
     if (n <= 1){
     	return 0;
 	} 
@@ -80,7 +80,7 @@ int is_prime(int n) {
 }
 
 // in so nguyen to
-void print_primes(int arr[100][100], int n, int m) {
+void printprimes(int arr[100][100], int n, int m) {
     printf("Cac so nguyen to trong mang:\n");
     int found = 0; 
     for (int i = 0; i < n; i++) {
@@ -107,11 +107,11 @@ int main(){
 		scanf("%d",&choice);
 		switch(choice){
 			case 1:
-				khai_bao(arr,&n,&m);
+				khaibao(arr,&n,&m);
 				printf("\n");
 				break;
 			case 2:
-				khai_bao(arr,&n,&m);
+				khaibao(arr,&n,&m);
 				printf("Mang da nhap la :\n");
 				for(int i=0; i<n ; i++){
 					for(int j=0; j<m ; j++){
@@ -122,17 +122,17 @@ int main(){
 				printf("\n");
 				break;
 			case 3://in phan tu goc 
-				khai_bao(arr,&n,&m);
+				khaibao(arr,&n,&m);
 				goc(arr,n,m);
 				printf("\n");
 				break;
 			case 4://in phan tu tren duong bien 
-				khai_bao(arr,&n,&m);
+				khaibao(arr,&n,&m);
 				bien(arr,n,m);
 				printf("In ra bien : %d\n", bien);
 				break;
 			case 5://cheo chinh ,cheo phu 
-				khai_bao(arr,&n,&m);
+				khaibao(arr,&n,&m);
 				//cheo chinh
 				chinh(arr,n,m);
 				printf("\n");
@@ -141,8 +141,8 @@ int main(){
 				printf("\n");
 				break;
 			case 6://so nguyen to
-				khai_bao(arr,&n,&m);
-				print_primes(arr,n,m);
+				khaibao(arr,&n,&m);
+				printprimes(arr,n,m);
 				printf("\n");
 				break;
 			case 7:
