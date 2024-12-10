@@ -18,9 +18,9 @@ int main() {
     printf("Nhap so thu hai: ");
     scanf("%d", &b);
 
-    int ket_qua = ucln(a, b);
+    int ketqua = ucln(a, b);
 
-    printf("Uoc chung lon nhat cua %d va %d la: %d\n", a, b, ket_qua);
+    printf("Uoc chung lon nhat cua %d va %d la: %d\n", a, b, ketqua);
 
     return 0;
 }
