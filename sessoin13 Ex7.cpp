@@ -1,6 +1,6 @@
 #include <stdio.h>
 // Ham khai_bao dung de nhap kich thuoc va cac phan tu cua manh hai chieu 
-void khai_bao(int arr[100][100] , int *n,int *m){ // int *n ,*m la tham so con tro  
+void khaibao(int arr[100][100] , int *n,int *m){ // int *n ,*m la tham so con tro  
 	printf("Nhap so cot :");
 	scanf("%d", n);
 	printf("Nhap so hang:");
@@ -17,7 +17,7 @@ void khai_bao(int arr[100][100] , int *n,int *m){ // int *n ,*m la tham so con t
 int main(){
 	int n,m;
 	int arr[100][100];
-		khai_bao(arr,&n,&m);
+		khaibao(arr,&n,&m);
 		printf("mang da nhap la :\n");
 	for(int i=0; i<n ; i++){
 		for(int j=0; j<m ; j++){
